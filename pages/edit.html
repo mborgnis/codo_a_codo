@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--alt+shift > copia datos-->
+<html lang="en"> <!--shift+tab> vuelve para atras la identacion-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.style.css">
+    <title>Mi Funko Shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <picture>
+                <a href="../home.html">
+                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="logo funkopop">
+                </a>
+            </picture>
+            <p><a href="">SALIR</a></p>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>EDITAR ITEM</h1>
+        </section>
+        <section>
+            <form>
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="select">
+                    <option value="seleccionar">Seleccionar</option>
+                </select>
+                <label for="licencia">Licencia:</label>
+                <select name="licencia" id="select">
+                    <option value="seleccionar">Seleccionar</option>
+                </select>
+                <br>
+                <label for="text">Nombre del producto:</label>
+                <input type="text" value="">
+                <br>
+                <div>
+                    <textarea name="descripcion" cols="30" rows="10">Descripcion</textarea>
+                </div>
+                <span><label for="text">SKU:</label>
+                    <input type="text" value=""></span>
+                <span><label for="text">Precio:</label>
+                    <input type="text" value=""></span>
+                <span><label for="text">Stock:</label>
+                    <input type="text" value=""></span>
+                <br>
+                <span><label for="text">Descuento:</label>
+                    <input type="text" value=""></span>
+                <span><label for="cuotas">Cuotas:</label>
+                    <select name="cuotas" id="select">
+                        <option value="3 cuotas sin interes">3 cuotas sin interes</option>
+                        <option value="6 cuotas sin interes">6 cuotas sin interes</option>
+                        <option value="12 cuotas de">12 cuotas de</option>
+                    </select></span>
+                <br>
+                <label for="imagen">Imágenes:</label>
+                <input type="file" value="">
+            </form>
+            <div>
+                <picture>
+                    <img src="../multimedia/star-wars/luke-1.webp" alt="funko de Luke Skywalker">
+                </picture>
+                <br>
+                <p>FRENTE</p>
+                <picture>
+                    <img src="../multimedia/star-wars/luke-box.webp" alt="caja de funko de Luke Skywalker">
+                </picture>
+                <br>
+                <p>DORSO</p>
+            </div>
+            <button type="submit">Modificar Producto</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="shop.hmtl">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="./pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="./pages/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="../multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>
