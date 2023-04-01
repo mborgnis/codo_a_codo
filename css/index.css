@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root {
+    --primary-color: #FF3333 ;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+
+    --secondary-color: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --third-color: #1F1F1F;
+    --third--900: rgb(31, 31, 31, 0.9);
+    --third--500: rgb(31, 31, 31, 0.5);
+    --third--300: rgb(31, 31, 31, 0.3);
+
+    --third-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    --base-font: 'Roboto', sans-serif;
+    --alternative-font: 'Taviraj', serif;
+
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xmall: 1.2em;
+
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;  /*es igual a 16px*/
+    color: var(--third-color);
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: inherit;
+    color: inherit;
+}
+
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+p {
+    font-size: 1.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
