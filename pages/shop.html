@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Mi Funko Shop</title>
 </head>
 <header>
-    <nav>
-        <picture>
+    <nav class="navbar container">
+        <picture class="navbar__img">
             <a href="shop.html">
                 <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Logo FUNKO POP">
             </a>
         </picture>
-        <ul>
-            <li>
+        <ul class="navbar__menu">
+            <li class="navbar__lista">
                 <a href="shop.html">SHOP</a>
             </li>
-            <li>
+            <li class="navbar__lista">
                 <a href=".pages/contact.html">CONTACTO</a>
             </li>
-            <li>
+            <li class="navbar__lista">
                 <a href="./pages/login.html">LOGIN</a>
             </li>
-            <li>
-                <a href="./pages/cart.htm">CART</a>
+            <li class="navbar__lista">
+                <a href="./pages/cart.htm"></a>
                 <img src="../multimedia/icons/cart-icon.svg" alt="icono de carrito">
             </li>
         </ul>
     </nav>
 </header>
-<div>
-    <nav>
+<aside class="container">
+    <div class="aside__form">
         <label for="buscar">BUSCAR</label>
         <form action="">
             <input type="text" name="buscar" value="item o categoria">
         </form>
+    </div>
+    <div class="aside__form">
         <label for="opciones">ORDENAR POR</label>
         <form action="">
             <select name="opciones">
@@ -45,6 +47,8 @@
                 <option value="nuevos">Mas Nuevos</option>
             </select>
         </form>
+    </div>
+    <div class="aside__form">
         <label for="filtrar">FILTRAR</label>
         <form action="">
             <input type="checkbox" name="uno" value="envio gratis">
@@ -54,10 +58,10 @@
             <input type="checkbox" name="tres" value="flash">
             <label for="">Entrega inmediata</label>
         </form>
-    </nav>
-</div>
+    </div>
+</aside>
 <main>
-    <section>
+    <section class="container">
         <article>
             <a href="">
                 <picture>

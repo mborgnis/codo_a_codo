@@ -16,7 +16,7 @@
     --third--500: rgb(31, 31, 31, 0.5);
     --third--300: rgb(31, 31, 31, 0.3);
 
-    --third-bg-solid: #30343F;
+    --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFF;
     --light-font-solid: #FFFFFF;
 
@@ -40,12 +40,12 @@
     --spacing-8: 0.8rem;
 }
 
-*,
-*::before
+*, 
+*::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 html {
@@ -74,7 +74,33 @@ p {
     font-size: 1.8em;
 }
 
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36) 0;
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar__menu {
+    display: flex;
+    gap: var(--spacing-28)
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__form {
+    justify-content: space-between;
 }
