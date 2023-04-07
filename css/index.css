@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Exo:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap');
 
 :root {
-    --primary-color: #FF3333 ;
+ 
+    /* COLORES*/ 
+    --primary-color: #FF3333;
     --primary-900: rgb(255, 51, 51, 0.9);
     --primary-500: rgb(255, 51, 51, 0.5);
     --primary-300: rgb(255, 51, 51, 0.3);
@@ -16,25 +18,31 @@
     --third--500: rgb(31, 31, 31, 0.5);
     --third--300: rgb(31, 31, 31, 0.3);
 
+    /* COLOR FONDO */
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFF;
     --light-font-solid: #FFFFFF;
 
+    /* FUENTES */
     --base-font: 'Roboto', sans-serif;
-    --alternative-font: 'Taviraj', serif;
+    --alternative-font: 'Exo', serif;
 
+    /* DISPLAYS */
     --font-display: 4.6em;
     --font-jumbo: 3.8em;
     --font-xlarge: 3em;
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xmall: 1.2em;
+    --font-xmall: 1.4em;
 
+    /* ESPACIADOS */
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
@@ -60,9 +68,12 @@ ul, ol {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: inherit;
     color: inherit;
+}
+
+img {
+    width: 100%;
 }
 
 header, footer {
@@ -74,15 +85,25 @@ p {
     font-size: 1.8em;
 }
 
-header {
-    background-color: var(--dark-bg-solid);
-    padding: var(--spacing-36) 0;
-}
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__form {
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
 }
 
 .navbar {
@@ -93,14 +114,49 @@ header {
 
 .navbar .navbar__menu {
     display: flex;
-    gap: var(--spacing-28)
+    gap: var(--spacing-20)
 }
 
-aside {
+.navbar__img {
+    max-width: 300px;
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    background-color: var(--secondary-300);
+}
+
+.with-icon {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-8);
 }
 
-.aside__form {
-    justify-content: space-between;
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 120px;
+}
+
+.submenu__item {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__item:hover {
+    background-color: var(--secondary-300);
 }

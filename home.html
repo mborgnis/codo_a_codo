@@ -10,38 +10,49 @@
 <body>
     <!--Inicio Header-->
     <header>
-        <nav class="navbar">
+        <nav class="navbar container">
             <picture class="navbar__img">
                 <a href="./home.html">
                     <img src="./multimedia/branding/logo_light_horizontal.svg" alt="Logo FUNKO POP">
                 </a>
             </picture>
             <ul class="navbar__menu"> 
-                <li class="navbar__lista">
-                    <a href="./pages/shop.html">SHOP</a>
+                <li class="navbar__lista with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="navbar__lista">
-                    <a href=".pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href=".pages/contact.html">CONTACTO</a>
                 </li>
                 <li class="navbar__lista">
-                    <a href="./pages/login.html">LOGIN</a>
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__lista">
-                    <a href="./pages/cart.htm"></a>
+                    <a class="navbar__cart" href="./pages/cart.htm"></a>
                     <img src="./multimedia/icons/cart-icon.svg" alt="icono de carrito">
                 </li>
             </ul>
         </nav>
     </header>
     <!--Fin Header-->
-    <section class="container">
+    <section class="">
         <article>
             <h3>Nuevos Ingresos</h3>
             <p>Descubri mas funkos para tu coleccion</p>
             <a href="./pages/shop.html">SHOP</a>
         </article>
     </section>
-    <main class="container">
+    <main class="">
         <section>
             <article>
                 <h3>Star Wars & The Mandalorian</h3>
@@ -147,5 +158,6 @@
         </section>
         <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
