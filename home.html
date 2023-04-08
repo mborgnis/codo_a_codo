@@ -45,88 +45,94 @@
         </nav>
     </header>
     <!--Fin Header-->
-    <section class="">
-        <article>
-            <h3>Nuevos Ingresos</h3>
-            <p>Descubri mas funkos para tu coleccion</p>
-            <a href="./pages/shop.html">SHOP</a>
+    <section class="banner">
+        <article class="banner__content container">
+            <h3 class="banner__t">Nuevos Ingresos</h3>
+            <p class="banner__txt">Descubri mas funkos para tu coleccion</p>
+            <a class="banner__link" href="./pages/shop.html">VER TIENDA</a>
         </article>
     </section>
-    <main class="">
-        <section>
-            <article>
-                <h3>Star Wars & The Mandalorian</h3>
-                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/shop.html">VER COLECCION</a>
+    <main class="main-container">
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__t">Star Wars & The Mandalorian</h3>
+                <p class="collection__txt">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCION</a>
             </article>
-            <picture>
+            <picture class="collection__img">
                 <img src="./multimedia/star-wars/baby-yoda-1.webp" alt="Funko de Baby Yoda">
             </picture>
         </section>
-        <section>
-            <article>
-                <h3>Pokemon Indigo</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="./pages/shop.html">VER COLECCION</a>
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__t">Pokemon Indigo</h3>
+                <p class="collection__txt">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCION</a>
             </article>
-            <picture>
+            <picture class="collection__img">
                 <img src="./multimedia/pokemon/vulpix-1.webp" alt="Funko de Baby Vukpix">
             </picture>
         </section>
-        <section>
-            <article>
-                <h3>Harry Potter</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="./pages/shop.html">VER COLECCION</a>
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__t">Harry Potter</h3>
+                <p class="collection__txt">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCION</a>
             </article>
-            <picture>
+            <picture class="collection__img">
                 <img src="./multimedia/harry-potter/snape-patronus-1.webp" alt="Funko del Patrobus de Snape">
             </picture>
         </section>
-        <aside> <!--slider-->
-            <h2>ULTIMOS LANZAMIENTOS</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+        <aside class="slider container"> <!--slider-->
+            <h2 class="slider__t">ULTIMOS LANZAMIENTOS</h2>
+            <ul class="slider__ul">
+                <li class="slider__item">
+                    <article class="card-item"> <!--es otro posicionamiento fuera del slider-->
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__img">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__pic--front" src="./multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                                <img class="card-item__pic--back" src="./multimedia/star-wars/trooper-box.webp" alt="funko pop en caja">
                             </picture>
-                            <div>
-                                <p>STAR WARS</p>
-                                <h4>STORMSTOPPER LIGHSABER</h4>
-                                <p>$1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                            <div class="card-item__content">
+                                <p class="card-item__n">STAR WARS</p>
+                                <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                                <p class="card-item__m">$1799,99</p>
+                                <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
                 </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="funko de un pokemoon volador">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__img">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__pic--front" src="./multimedia/pokemon/pidgeotto-1.webp" alt="funko de un pokemoon volador">
+                                <img class="card-item__pic--back" src="./multimedia/pokemon/pidgeotto-box.webp" alt="funko pop en caja">  
                             </picture>
-                            <div>
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                            <div class="card-item__content">
+                                <p class="card-item__n">POKEMON</p>
+                                <h4 class="card-item__t">PIDGEOTTO</h4>
+                                <p class="card-item__m">$1799,99</p>
+                                <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
                 </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./multimedia/harry-potter/luna-1.webp" alt="funko de luna lunatica de harry potter">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__img">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__pic--front" src="./multimedia/harry-potter/luna-1.webp" alt="funko de luna lunatica de harry potter">
+                                <img class="card-item__pic--back" src="./multimedia/harry-potter/luna-box.webp" alt="funko pop en caja">
                             </picture>
-                            <div>
-                                <p>HARRY POTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                            <div class="card-item__content">
+                                <p class="card-item__n">HARRY POTER</p>
+                                <h4 class="card-item__t">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__m">$1799,99</p>
+                                <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
@@ -134,29 +140,27 @@
             </ul>
         </aside>
     </main>
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./pages/shop.hmtl">SHOP</a>
+    <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/shop.hmtl">SHOP</a>
                     </li>
-                    <li>
-                        <a href="./pages/register.html">REGISTRARSE</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
                     </li>
-                    <li>
-                        <a href="./pages/login.html">LOGIN</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                     </li>
                 </ul>
                 <picture>
                     <img src="./multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
                 </picture>
             </nav>
-        </section>
-        <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
