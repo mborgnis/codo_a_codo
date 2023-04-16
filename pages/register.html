@@ -1,5 +1,4 @@
-<!DOCTYPE html> <!--alt+shift > copia datos-->
-<html lang="en"> <!--shift+tab> vuelve para atras la identacion-->
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +8,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__img">
                 <a href="../home.html">
                     <img src="../multimedia/branding/logo_light_horizontal.svg" alt="logo funkopop">
                 </a>
@@ -18,38 +17,42 @@
             <p><a href="">SALIR</a></p>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>CREA TU CUENTA</h1>
-            <h3>Completa el formulario para ser parte del mundo de los Funkos</h3>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" valor="">
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" valor="">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" valor="">
-                <br>
-                <label for="coontraseña">Contraseña:</label>
-                <input type="password" valor="">
-                <br>
-                <label for="password">Repetir Contraseña:</label>
-                <input type="password" valor="">
-                <br>
-                <button type="submit">Registrar</button>
-                <span>
-                    <input type="checkbox" name="TyC" valor="aceptar">
-                    <label for="">Acepto</label>
-                </span>
-                <span><a href="">Terminos y Condiciones</a></span>
+    <main class="container">
+            <h1 class="tittle">CREA TU CUENTA</h1>
+            <h3 class="tittle__sub">Completa el formulario para ser parte del mundo de los funkos</h3>
+            <form class="form__content">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label class="form__label class="form__label"" for="name">Nombre:</label>
+                        <input class="form__input" type="name" valor="">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="name">Apellido:</label>
+                        <input class="form__input" type="surname" valor="">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="name">Email:</label>
+                        <input class="form__input" type="email" valor="">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="name">Contraseña:</label>
+                        <input class="form__input" type="password" valor="">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="name">Repite Contraseña:</label>
+                        <input class="form__input" type="password" valor="">
+                    </li>
+                    <button class="form__button" type="submitt" value="">Registrarse</button>
+                    <li class="form__checkbox">
+                        <input type="checkbox" name="TyC" valor="aceptar">
+                        <label class="form__check" for="">Acepto</label><a class="card-item__cta" href="#">Terminos y Condiciones</a>
+                    </li>
+                </ul>
             </form>
-        </section>
     </main>
-    <footer>
-        <section>
-            <nav>
+    <footer class="footer">
+        <section class="container">
+            <nav class="navbar">
                 <ul>
                     <li>
                         <a href="shop.hmtl">SHOP</a>
@@ -68,8 +71,7 @@
                     <img src="../multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
                 </picture>
             </nav>
+            <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
         </section>
-        <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
-</html>

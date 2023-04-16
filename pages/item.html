@@ -10,24 +10,35 @@
 <body>
     <!--Inicio Header-->
     <header>
-        <nav>
-            <picture>
-                <a href="./home.html">
+        <nav class="navbar container">
+            <picture class="navbar__img">
+                <a href="../home.html">
                     <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Logo FUNKO POP">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__lista with-submenu">
+                    <a class="navbar__link with-icon" href="shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href=".pages/contact.html">CONTACTO</a>
+                <li class="navbar__lista">
+                    <a class="navbar__link" href=".pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar__lista">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.htm">CART</a>
+                <li class="navbar__lista">
+                    <a class="navbar__cart"href="./pages/cart.htm"></a>
                     <img src="../multimedia/icons/cart-icon.svg" alt="icono de carrito">
                 </li>
             </ul>
@@ -128,5 +139,6 @@
         </section>
         <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
