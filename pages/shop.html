@@ -43,33 +43,48 @@
             </ul>
         </nav>
     </header>
-    <aside class="container">
-        <div class="aside__form">
-            <label for="buscar">BUSCAR</label>
-            <form action="">
-                <input type="text" name="buscar" value="item o categoria">
-            </form>
+    <aside class="aside__form container">
+        <div class="aside__div">
+            <label class="aside__label">Buscar</label>
+            <input type="text" name="buscar" value="Ingrese categoria">
         </div>
-        <div class="aside__form">
-            <label for="opciones">ORDENAR POR</label>
-            <form action="">
-                <select name="opciones">
-                    <option value="mayor a menor">Precio</option>
-                    <option value="A to Z">A to Z</option>
-                    <option value="nuevos">Mas Nuevos</option>
-                </select>
-            </form>
+        <div class="aside__div">
+            <label class="aside__label">Ordenar</label>
+            <select id="select" name="opciones">
+                <option value="mayor a menor">Precio</option>
+                <option value="A to Z">A to Z</option>
+                <option value="nuevos">Mas Nuevos</option>
+            </select>
         </div>
-        <div class="aside__form">
-            <label for="filtrar">FILTRAR</label>
-            <form action="">
-                <input type="checkbox" name="uno" value="envio gratis">
-                <label for="">Envio gratis</label>
-                <input type="checkbox" name="dos" value="sin interes">
-                <label for="">Cuotas sin interes</label>
-                <input type="checkbox" name="tres" value="flash">
-                <label for="">Entrega inmediata</label>
-            </form>
+        <div class="aside__div">
+            <p class="aside__label">Precio</p>
+            <ul class="aside__list">
+                <li>
+                    <label>min</label>
+                    <input type="number" value="0">
+                </li>
+                <li>
+                    <label>min</label>
+                    <input type="number" value="0">
+                </li>
+            </ul>
+        </div>
+        <div class="aside__div">
+            <label class="aside__label">Filtrar</label>
+            <ul>
+                <li>
+                    <input type="checkbox" value="uno">
+                    <label>Envio gratis</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="dos">
+                    <label>Cuotas sin interes</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="tres">
+                    <label>Entrega inmediata</label>
+                </li>
+            </ul>
         </div>
     </aside>
     <main>
@@ -98,30 +113,29 @@
             <a href="#">&raquo;</a>
         </div>
     </main>
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="shop.hmtl">SHOP</a>
+    <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="shop.hmtl">SHOP</a>
                     </li>
-                    <li>
-                        <a href="./pages/register.html">REGISTRARSE</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
                     </li>
-                    <li>
-                        <a href="./pages/login.html">LOGIN</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                     </li>
                 </ul>
                 <picture>
                     <img src="../multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
                 </picture>
             </nav>
-        </section>
-        <p>Todos los derechos reservados 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <html

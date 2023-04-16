@@ -64,7 +64,7 @@ html {
     color: var(--third-color);
 }
 
-ul, ol {
+ul, ol, li {
     list-style-type: none;
 }
 
@@ -433,6 +433,62 @@ header {
     gap: var(--spacing-8);
     font-size: small;
 }
+
+.aside__form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-68);
+}
+
+.aside__div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    text-transform: uppercase;
+}
+
+.aside__list {
+    display: flex;
+    flex-direction: row;
+}
+
+#select {
+    width: fit-content;
+}
+
+.pagination {
+    display: flex;
+    padding: var(--spacing-68);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: center;
+    padding: 10px 18px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
 
 /* FOOTER */
 
