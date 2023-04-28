@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!--alt+shift > copia datos-->
+<html lang="en"> <!--shift+tab> vuelve para atras la identacion-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>Mi Funko Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__img">
+                <a href="../home.html">
+                    <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="logo funkopop">
+                </a>
+            </picture>
+            <p><a href="">SALIR</a></p>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="section__container">
+            <h1 class="main__tittle">CREAR NUEVO ITEM</h1>
+            <form>
+                <div class="form__div">
+                    <label class="form-box__label" for="collection">Categoría:</label>
+                    <select class="form-box__select" name="collection" id="collection" required>
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="Figuras Coleccionables">Figuras Coleccionables</option>
+                        <option value="Llaveros">Llaveros</option>
+                        <option value="Remeras">Remeras</option>
+                    </select>
+                    <div class="div__licence">
+                        <label class="form-box__label" for="licencia">Licencia:</label>
+                        <select class="form-box__select" name="licencia" id="select">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="Star Wars">Star Wars</option>
+                            <option value="Harry Potter">Harry Potter</option>
+                            <option value="Pokemon">Pokemon</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__div">
+                    <label class="form-box__label" for="text">Nombre del producto:</label>
+                    <input class="form-box__input" type="text" value="">
+                </div>
+                <div class="form__div">
+                    <textarea class="description__box" name="description" cols="100" rows="20">Descripcion del producto</textarea>
+                </div>
+                <div class="form__div">    
+                    <div class="form-div_2">
+                        <label class="form-box__label" for="sku">SKU:</label>
+                        <input class="form-box__input" type="text" name="sku" id="sku" placeholder="ABCXXXYYY" required>
+                    </div>
+                    <div class="form-div_2">
+                        <label class="form-box__label" for="price">Precio:</label>
+                        <input class="form-box__input" type="text" name="price" id="price" data-type="currency" placeholder="$ 0.000,00">
+                    </div>
+                    <div class="form-div_2">
+                        <label class="form-box__label" for="stock">Stock:</label>
+                        <input class="form-box__input" type="number" min="0" name="stock" id="stock" placeholder="0 unidades" required>
+                    </div>
+                </div>
+                <div class="form__div">
+                    <label class="form-box__label" for="discount">Descuento:</label>
+                    <input class="form-box__input" type="number" min="0" max="100" step="5" name="discount" id="discount" placeholder="0 %" required>
+                    <div class="div__cuotas">
+                        <label class="form-box__label" for="dues">Cuotas:</label>
+                        <select class="form-box__select" name="dues" id="dues">
+                            <option value="0">1 cuota de</option>
+                            <option value="3">3 cuotas de</option>
+                            <option value="6">6 cuotas de</option>
+                            <option value="9">9 cuotas de</option>
+                            <option value="12">12 cuotas de</option>
+                            <option value="18">18 cuotas de</option>
+                            <option value="24">24 cuotas de</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__div">
+                    <label class="form-box__label" for="img">Imagenes:</label>
+                    <input class="form-box__input" type="file" name="img" id="img" multiple> 
+                </div>
+                <!--<div class="form__div">
+                    <picture class="form__pic">
+                        <img class="form-pic__img" src="../../multimedia/harry-potter/hermione-1.webp" alt="Figura Funko coleccionable de Hermione">
+                        <p>Frente</p>
+                    </picture>
+                    <picture class="form__pic">
+                        <img class="form-pic__img" src="../../multimedia/harry-potter/hermione-box.webp" alt="Figura Funko coleccionable de Hermione en caja">
+                        <p>Dorso</p>
+                    </picture>
+                </div> -->
+                <div class="form__div">
+                    <button class="form__button" type="submit" value="limpiar">Crear</button>
+                    <button class="form__button" type="reset" value="limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.hmtl">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
+            </picture>
+        </nav>
+    <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
+</footer>
+</body>
+</html>

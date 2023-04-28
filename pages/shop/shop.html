@@ -1,0 +1,245 @@
+<!DOCTYPE html> <!--alt+shift > copia datos-->
+<html lang="en"> <!--shift+tab> vuelve para atras la identacion-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>Mi Funko Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__img">
+                <a href="../../home.html">
+                    <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="Logo FUNKO POP">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__lista with-submenu">
+                    <a class="navbar__link with-icon" href="shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__lista">
+                    <a class="navbar__link" href=".pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__lista">
+                    <a class="navbar__link" href=../../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__lista">
+                    <a class="navbar__cart"href=../../pages/cart.htm"></a>
+                    <img src="../../multimedia/icons/cart-icon.svg" alt="icono de carrito">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="shop__grid container">
+        <aside class="aside__shop">
+            <div class="aside__div">
+                <label class="aside__label">Buscar</label>
+                <input class="aside__input" type="text" name="search" placeholder="Categoria">
+            </div>
+            <div class="aside__div">
+                <label class="aside__label" for="orderby">Ordenar por</label>
+                <select id="select" name="orderby">
+                    <option value="asc">Precio</option>
+                    <option value="az">A to Z</option>
+                    <option value="new">Mas Nuevos</option>
+                </select>
+            </div>
+            <div class="aside__div">
+                <p class="aside__label">Precio</p>
+                <ul class="aside__ul">
+                    <li class="aside__list">
+                        <label for="min">MIN</label>
+                        <input class="aside__input" id="num" type="text" name="min" placeholder="0">
+                    </li>
+                    <li class="aside__list">
+                        <label for="max">- MAX</label>
+                        <input class="aside__input" id="num" name="max" type="text" placeholder="0">
+                    </li>
+                </ul>
+            </div>
+            <div class="aside__div">
+                <label class="aside__label">Filtrar</label>
+                <ul>
+                    <li class="aside__check">
+                        <input class="" type="checkbox" name="filter" value="shipping">
+                        <label class="check__label">Envio gratis</label>
+                    </li>
+                    <li class="aside__check">
+                        <input class="" type="checkbox" name="filter" value="fees">
+                        <label class="check__label">Cuotas sin interes</label>
+                    </li>
+                    <li class="aside__check">
+                        <input class="" type="checkbox" name="filter" value="deliver">
+                        <label class="check__label">Entrega inmediata</label>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="section__grid">
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+            <article class="shop__article">
+                <a href="">
+                    <picture>
+                        <img src="../../multimedia/star-wars/trooper-1.webp" alt="funko de un soldado del darkside">
+                    </picture>
+                    <div class="card-item__content">
+                        <p class="card-item__n">STAR WARS</p>
+                        <h4 class="card-item__t">STORMSTOPPER LIGHSABER</h4>
+                        <p class="card-item__m">$1799,99</p>
+                        <p class="card-item__cta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="shop.hmtl">SHOP</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=../../pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=../../pages/login.html">LOGIN</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=../../pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="../../multimedia/branding/isotype.svg" alt="logotipo de funkoshop">
+                </picture>
+            </nav>
+        <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<html
