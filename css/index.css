@@ -316,7 +316,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
-    padding: var(--spacing-16);
+    padding: var(--spacing-12);
 }
 
 .card-item__n {
@@ -404,11 +404,17 @@ header {
     font-weight: 400;
 }
 
+/*
+.form__input:active {
+    border: none;
+}*/
+
 .form__input {
     flex-grow: 3;
     border-bottom: 2px solid var(--primary-color);
     font-size: medium;
 }
+
 
 .form__button {
     display: flex;
@@ -419,6 +425,12 @@ header {
     padding: var(--spacing-12) var(--spacing-20);
     border-radius: 5px;
     align-self: center;
+}
+
+.form__button:hover {
+    background-color: rgb(195, 74, 74);
+    color: var(--light-font-solid);
+    transition: background .3s ease-in-out;
 }
 
 .form__checkbox {
@@ -442,6 +454,7 @@ header {
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-rows: repeat(3, auto);
+    gap: var(--spacing-8);
 }
 
 .section__grid {
@@ -455,7 +468,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-12);
-    padding: var(--spacing-68);
+    padding: var(--spacing-36);
+    height: fit-content;
+    margin-top: var(--spacing-20);
+    /*box-shadow: 3px 3px 3px 1px rgba(23, 23, 23, 0.688);*/
 }
 
 .aside__div {
@@ -474,6 +490,8 @@ header {
     font-style: italic;
     text-transform: uppercase;
 }
+
+
 
 .aside__input {
     font-size: var(--font-xmall);
@@ -512,7 +530,7 @@ header {
 
 #select {
     width: fit-content;
-    font-size: var(--font-small);
+    font-size: var(--font-xmall);
 }
 
 /* LOGIN */
@@ -554,7 +572,7 @@ header {
 .search__input {
     border: 2px solid var(--third-color);
     border-radius: 3px;
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
 }
 
 .section__admin {
@@ -567,15 +585,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: var(--font-large);
     padding: var(--spacing-20);
     margin-right: var(--spacing-68);
+}
+
+.section-admin__t {
+    font-size: var(--font-jumbo);
 }
 
 .span__link {
     background-color: var(--primary-color);
     color: var(--light-bg-solid);
     font-family: var(--alternative-font);
+    font-size: var(--font-small);
     text-transform: uppercase;
     padding: 2px 8px;
     border-radius: 3px;
@@ -585,7 +607,7 @@ header {
     display: grid;
     grid-template-columns: 30px 85px 300px 200px 25px 25px;
     align-items: center;
-    gap: var(--spacing-36);
+    gap: 50px;
     margin: 3px;
     margin-left: var(--spacing-128);
 }
@@ -639,6 +661,14 @@ header {
     text-align: center;
     border: 2px solid var(--third-color);
     border-radius: 3px;
+    width: 10%;
+}
+
+.item-input__btn {
+    width: 5%;
+    background-color: slategray;
+    color: white;
+    border: none;
 }
 
 .item-input__b {
@@ -692,6 +722,7 @@ header {
     border-bottom: 2px solid var(--primary-color);
     font-size: medium;
     width: 40%;
+    padding: 3px;
 }
 
 #discount {
