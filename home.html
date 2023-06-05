@@ -83,10 +83,11 @@
                 <img src="./multimedia/harry-potter/snape-patronus-1.webp" alt="Funko del Patrobus de Snape">
             </picture>
         </section>
-        <aside class="slider container"> <!--slider-->
+        <section class="slider container glide"> <!--slider-->
             <h2 class="slider__t">ULTIMOS LANZAMIENTOS</h2>
-            <ul class="slider__ul">
-                <li class="slider__item">
+            <div class="glide__track" data-glide-el="track">
+            <ul class="slider__ul glide__slides">
+                <li class="slider__item glide__slide">
                     <article class="card-item"> <!--es otro posicionamiento fuera del slider-->
                         <a class="card-item__link" href="">
                             <picture class="card-item__img">
@@ -103,7 +104,7 @@
                         </a>
                     </article>
                 </li>
-                <li class="slider__item">
+                <li class="slider__item glide__slide">
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__img">
@@ -120,7 +121,7 @@
                         </a>
                     </article>
                 </li>
-                <li class="slider__item">
+                <li class="slider__item glide__slide">
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__img">
@@ -138,7 +139,12 @@
                     </article>
                 </li>
             </ul>
-        </aside>
+            </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="tabler:chevron-left"></iconify-icon></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="tabler:chevron-right"></iconify-icon></button>
+        </div>
+    </section>
     </main>
     <footer class="footer">
             <nav class="navbar container">
@@ -163,5 +169,26 @@
         <p class="footer__copy">Todos los derechos reservados 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide',
+            {
+                type: 'carousel',
+                autoplay: 2800, // Tiempo de espera en milisegundos entre cada slide
+                //hoverpause: true,
+                // startAt: 0,
+                perView: 4,
+                gap: 5,
+                breakpoints: {
+                    991: {
+                        perView: 2
+                        },
+                    768: {
+                        perView: 1
+                    }
+                }
+            }
+        ).mount();
+    </script>
 </body>
 </html>

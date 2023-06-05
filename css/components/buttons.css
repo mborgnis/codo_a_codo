@@ -1,0 +1,38 @@
+.form__button {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-small);
+    background-color: var(--primary-900);
+    color: var(--third-color);
+    padding: var(--spacing-12) var(--spacing-20);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.form__button:hover {
+    background-color: rgb(195, 74, 74);
+    color: var(--light-font-solid);
+    transition: background .3s ease-in-out;
+}
+
+/* ITEM */
+
+.item-input__btn {
+    width: 5%;
+    background-color: slategray;
+    color: white;
+    border: none;
+}
+
+.item-input__b {
+    font-size: var(--font-large);
+    background-color: var(--secondary-color);
+    color: var(--light-font-solid);
+    padding: 6px 10px;
+}
+
+.item-input__b:hover {
+    background-color: var(--third--300);
+    transition: background .3s ease-in-out;
+    color: var(--third-color);
+}

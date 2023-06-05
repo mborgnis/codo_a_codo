@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;  /*es igual a 16px*/
+    color: var(--third-color);
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+p {
+    font-size: 1.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__form {
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+}
