@@ -1,0 +1,105 @@
+.banner {
+    background-image: url(../../multimedia/funkos-banner.webp);
+    padding: var(--spacing-128);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner::before{
+    content: '';
+    background-color: rgba(0, 0, 0,  0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__t {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-solid);
+}
+
+.banner__txt {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+.banner__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--light-bg-solid);
+    background-position: start;
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 400;
+    transition: background .3s ease-in-out;
+}
+
+.banner__link:hover {
+    background-color: var(--secondary-900);
+    color: var(--light-font-solid);
+}
+
+/* COLLECCION */
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: var(--spacing-16) 0;
+}
+
+.collection__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;
+}
+
+.collection__t {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 600;
+}
+
+.collection__txt {
+    font-family: var(--base-font);
+    font-size: var(--font-xlarge);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-20);
+}
+
+.collection__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+}
+
+.collection__link:hover{
+    background-color: var(--secondary-500);
+    transition: background .3s ease-in-out;
+    color: var(--third-color);
+}
+
+.collection:nth-child(2) .collection__img {
+    order: -1;
+}

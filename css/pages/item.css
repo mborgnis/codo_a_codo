@@ -1,0 +1,67 @@
+.section__item {
+    display: flex;
+    align-items: center;
+}
+
+.section-item__d {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: var(--spacing-20);
+}
+
+.item__category {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+.item__name {
+    font-family: var(--base-font);
+    font-size: var(--font-jumbo);
+}
+
+.item__d {
+    font-size: var(--font-large);
+    font-weight: 400;
+}
+
+.item__price {
+    font-size: var(--font-jumbo);
+    font-family: var(--base-font);
+    font-weight: 400;
+}
+
+.item__input {
+    display: flex;
+    gap: var(--spacing-12)
+}
+
+.item-input__n {
+    font-size: var(--font-medium);
+    text-align: center;
+    border: 2px solid var(--third-color);
+    border-radius: 3px;
+    width: 10%;
+}
+
+.item-input__btn {
+    width: 5%;
+    background-color: rgb(71, 87, 103);
+    color: white;
+    border: none;
+}
+
+.item-input__b {
+    font-family: var(--alternative-font);
+    background-color: var(--secondary-color);
+    color: var(--light-font-solid);
+    padding: 6px 10px;
+    border: none;
+}
+
+.item-input__b:hover {
+    background-color: var(--third--300);
+    transition: background .3s ease-in-out;
+    color: var(--third-color);
+}
