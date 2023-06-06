@@ -4,7 +4,7 @@ const more = document.querySelector('#more')
 
 more.addEventListener('click', () => quantity.value = Number(quantity.value) + 1);
 less.addEventListener('click', () => {
-  if (quantity.value < 1) {
+  if (quantity.value <= 0) {
     return 0;
   } else (quantity.value = Number(quantity.value) - 1);
 });
