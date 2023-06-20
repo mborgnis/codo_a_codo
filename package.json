@@ -1,0 +1,23 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Proyecto de Codo a Codo 4.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mborgnis/codo_a_codo.git"
+  },
+  "author": "Micaela Borgnis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mborgnis/codo_a_codo/issues"
+  },
+  "homepage": "https://github.com/mborgnis/codo_a_codo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
